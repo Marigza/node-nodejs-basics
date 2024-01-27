@@ -15,7 +15,8 @@ const write = async () => {
 
     process.stdin.on("data", (data) => {
         stream.write(data)
-        process.stdout.write('\nData is recorded to "fileToWrite.txt"\nNow you can exit with "ctrl+C" command');
+        process.stdout.write('\nData is recorded to "fileToWrite.txt"\n');
+        process.exit()
     })
         
 
